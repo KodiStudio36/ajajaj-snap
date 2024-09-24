@@ -4,7 +4,7 @@
 
 import Typography from "@mui/material/Typography";
 
-export const metadata = {title: "Domov | Snapchat"}
+export const metadata = {title: "Domov | AjajajSnap"}
 
 export default function Home() {
 

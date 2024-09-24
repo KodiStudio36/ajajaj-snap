@@ -4,7 +4,7 @@
 
 import { Typography, Container } from "@mui/material";
 
-export const metadata = {title: "O mne | Snapchat"}
+export const metadata = {title: "O mne | AjajajSnap"}
 
 export default function About() {
 
