@@ -2,7 +2,8 @@
 
 import { Metadata } from "next";
 import "./globals.css";
-import Navbar from "@/components/NavBar";
+import Navbar from "../components/NavBar";
+import AuthProvider from "../components/AuthProvider";
 
 export const metadata: Metadata = {
   title: "Ajajaj-Snap",
@@ -16,13 +17,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="sk">
-      <body>
-          <div style={{ minHeight: '92vh', display: 'flex', flexDirection: 'column' }}>
+      <body style={{ margin: 0, height: '100vh' }}>
+        <AuthProvider>
+          <div style={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
             <main style={{ flexGrow: 1 }}>
               {children}
             </main>
           </div>
-          <Navbar /> {/* Moved Navbar outside of the main container */}
+          <Navbar/> {/* Navbar stays at the bottom */}
+        </AuthProvider>
       </body>
     </html>
   );
