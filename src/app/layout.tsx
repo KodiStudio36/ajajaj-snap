@@ -5,7 +5,7 @@ import "./globals.css";
 import Navbar from "@/components/NavBar";
 
 export const metadata: Metadata = {
-  title: "SnapZoška",
+  title: "Ajajaj-Snap",
   description: "Created by students of SPŠE Zochova 9, Bratislava",
 };
 
