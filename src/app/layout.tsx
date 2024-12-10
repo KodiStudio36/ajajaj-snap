@@ -21,7 +21,7 @@ export default function RootLayout({
       <body>
         <ThemeProvider>
           <AuthProvider>
-            <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', padding: "0px" }}>
+            <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', padding: "10px" }}>
               <main>
                 {children}
               </main>

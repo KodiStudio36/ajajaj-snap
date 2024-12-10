@@ -4,13 +4,16 @@
 
 import { signIn } from 'next-auth/react';
 import { Button, Typography, Container } from '@mui/material';
+import { useTheme } from "../../../components/ThemeProvider";
 
 const SignIn = () => {
+  const theme = useTheme();
+
   return (
     <Container>
-      <Typography variant="h4">Sign In</Typography>
-      <Button 
-        variant="contained" 
+      <Typography style={{ color: theme.theme.palette.text.primary }} variant="h4">Sign In</Typography>
+      <Button
+        variant="contained"
         onClick={() => signIn('google')}
         sx={{ marginTop: '16px' }}
       >
